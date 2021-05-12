@@ -1,0 +1,39 @@
+body {
+background-color: #1E1A13;
+padding: 0;
+margin: 0;
+
+text-align: center;
+color: white;
+font-weight: 300;
+font-family:Raleway;
+}
+
+.ImageTitle{
+    width: 100%;
+  }
+
+  
+
+UL.col3
+{
+PADDING-RIGHT: 0px;
+PADDING-LEFT: 0px;
+FLOAT: left;
+PADDING-BOTTOM: 0px;
+MARGIN: 15px 0px;
+WIDTH: 100%;
+PADDING-TOP: 0px;
+LIST-STYLE-TYPE: none
+}
+
+UL.col3 LI
+{
+PADDING-RIGHT: 2px;
+DISPLAY: inline;
+PADDING-LEFT: 2px;
+FLOAT: left;
+PADDING-BOTTOM: 2px;
+WIDTH: 30%;
+PADDING-TOP: 2px
+}

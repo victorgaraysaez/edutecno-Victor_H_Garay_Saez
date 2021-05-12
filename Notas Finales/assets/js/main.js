@@ -1,0 +1,75 @@
+var apellido = prompt("¿Cual es su apellido?")
+var nombre = prompt("¿Cual es su nombre?")
+var Carrera = prompt("Si su carrera es Desarrollo Web, escribala en el recuadro")
+
+var Ramo01 = prompt("Si su Primer Ramo es HTML, escribalo en el recuadro")
+var R01N01 = prompt("Escriba en el recuadro su primera nota")
+var R01N02 = prompt("Escriba en el recuadro su segunda nota")
+var R01N03 = prompt("Escriba en el recuadro su tercera nota")
+var Ramo02 = prompt("Si su Segundo Ramo es CSS, escribalo en el recuadro")
+var R02N01 = prompt("Escriba en el recuadro su primera nota")
+var R02N02 = prompt("Escriba en el recuadro su segunda nota")
+var R02N03 = prompt("Escriba en el recuadro su tercera nota")
+var Ramo03 = prompt("Si su Tercer Ramo es JavaScript, escribalo en el recuadro")
+var R03N01 = prompt("Escriba en el recuadro su primera nota")
+var R03N02 = prompt("Escriba en el recuadro su segunda nota")
+var R03N03 = prompt("Si se acoge al art 73 del reglamento de estudiantes, escriba - ")
+
+var avg01 =  ((parseFloat(R01N01) + parseFloat(R01N02) + parseFloat(R01N03)) /3).toFixed(2)
+
+var avg02 =  ((parseFloat(R02N01) + parseFloat(R02N02) + parseFloat(R02N03)) /3).toFixed(2)
+
+
+document.write("<div class='container'>")
+document.write("Nombre: " + nombre +" "+ apellido)
+document.write("<br> Carrera: " + Carrera )
+
+document.write("<table class='table'>")
+
+document.write("<thead>")
+document.write("<tr>")
+document.write("<th scope='col'>Ramo</th>")
+document.write("<th scope='col'>Nota 1</th>")
+document.write("<th scope='col'>Nota 2</th>")
+document.write("<th scope='col'>Nota 3</th>")
+document.write("<th scope='col'>Promedio</th>")
+document.write("</tr>")
+document.write("</thead>")
+
+document.write("<tbody>")
+document.write("<tr>")
+document.write("<td>" + Ramo01 + "</td>")
+document.write("<td>" + R01N01 + "</td>")
+document.write("<td>" + R01N02 +"</td>")
+document.write("<td>" + R01N03 + "</td>") 
+document.write("<td>" + avg01 + "</td>")
+document.write("<tr>")
+document.write("</tbody>")
+
+document.write("<tbody>")
+document.write("<tr>")
+document.write("<td>" + Ramo02 + "</td>")
+document.write("<td>" + R02N01 + "</td>")
+document.write("<td>" + R02N02 + "</td>")
+document.write("<td>" + R02N03 + "</td>") 
+document.write("<td>" + avg02 + "</td>")
+document.write("<tr>")
+document.write("</tbody>")
+
+document.write("<tbody>")
+document.write("<tr>")
+document.write("<td>" + Ramo03 + "</td>")
+document.write("<td>" + R03N01 + "</td>")
+document.write("<td>" + R03N02 + "</td>")
+document.write("<td>" + R03N03 + "</td>")
+document.write("<th scope='col'>-</th>")
+document.write("<tr>")
+document.write("</tbody>")
+
+document.write("</table>")
+
+var avg03 = (12 - (parseFloat(R03N01) + parseFloat(R03N02))).toFixed(2)
+
+document.write("<br> Para Aprobar el Ramo JavaScript con nota 4, necesitas obtener un " + avg03 + " en la Nota 3.")
+
+document.write("</div>")

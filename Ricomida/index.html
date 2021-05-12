@@ -1,0 +1,204 @@
+<DOCTYPE html>
+    <html lang="es" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ricomida</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" type="image/png" href="assets/img/slider-5.png">
+        <meta name= "author" content= "Víctor Hugo Garay Sáez">
+        <meta name= "description" content= "Ricomida - Disfruta de comidas y delicias">
+        <meta name= "keywords" content= "Products Ricomida, Relic recipes, recetas de pizza, pizza ,carousel, javascript">
+  <!--CSS Bootstrap 4.5.3-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Lobster:400,700" rel="stylesheet">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!--Mi estilo-->
+  <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand texto-nav" href="#">Ricomida</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#Inicio">Inicio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Recetas">Recetas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Nosotros">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Contacto">Contacto</a> 
+              </li>
+          </ul>
+        </div>
+       </div> 
+      </nav>
+
+
+    <header id="Inicio">
+ <div class="container pt-4" >
+    <div class="row">
+        <div class="col-sm-6">
+            <img class="img-fluid" src="assets/img/principal.jpg" alt="">
+        </div>
+        <div class="col-sm-6 my-5 txt-center text-sm-left">
+            <h1>Pizzas al estilo Chicago con espinacas y champiñones</h1>
+            <div class="dropdown-divider"></div>
+            <h3>60 MIN -6 PERSONAS</h3>
+            <button id="enviarCorreo" type="button" class="btn btn btn-outline-secondary" data-toggle="tooltip"
+                data-placement="bottom" title="Presiona aqui para enviar a tu correo">
+                Enviar por correo
+            </button>
+            <button type="button" class="btn btn btn-outline-secondary ml-2" data-toggle="tooltip"
+                data-placement="right" title="Agrega una receta a tus favoritos">
+                Añadir a favoritos
+            </button>
+        </div>
+    </div>
+</header>
+
+   <section class="row d-none d-sm-block" id="Recetas" >
+    <div class="container pt-4" >
+    <div class="col">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="bg-dark active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="bg-dark"></li>
+                </ol>
+            <div>
+        <div class="carousel-inner mt-5">
+            <div class="carousel-item active">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/img/slider-1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/slider-2.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/slider-3.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/slider-4.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/img/slider-5.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/slider-6.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/slider-7.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col">
+                        <img src="assets/img/slider-8.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div> 
+        <div class= "dropdown-divider mt-5"></div>
+   </div>
+ </div>
+ 
+</section> 
+
+      
+ 
+   <section class="row d-none d-sm-block" id="Recetas" >
+    <div class="container pt-4" >
+        <div class="row">
+            <div class="col-sm-6">
+                <h2 class="text-uppercase" id="Recetas">Ingredientes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis esse error tempore totam pariatur reprehenderit commodi et animi sit. Ab error temporibus quisquam atque, distinctio perferendis ratione modi unde? Unde?</p>
+            </div>
+
+            <div class="col-sm-6">
+                <h2 class="text-uppercase">Preparación</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt dignissimos sapiente quod, voluptas modi asperiores cum veritatis earum vitae, velit libero rerum reiciendis quia sit illo enim commodi optio sint.    </p>
+            </div>
+        </div>
+	 </div>
+ 
+   </section>
+		
+<section class="row d-none d-sm-block" id="Nosotros" >
+     <div class="container pt-4" >	
+        <div class="dropdown-divider mt-5">
+            <h1 class="text-center text-uppercase">Recetas Relacionadas</h1>
+		</div>
+	 </div>
+ </section>
+		
+<section class="row d-none d-sm-block" id="Nosotros" >
+     <div class="container pt-4" >			
+			<div class="card-deck text-left">		
+				<div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+						  <h5 class="card-title mb-3 text-uppercase">Panqueques con manjar y crema</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                     </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+						  <h5 class="card-title mb-3 text-uppercase">Tiramisú</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+						  <h5 class="card-title mb-3 text-uppercase">Plateada</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</section>
+
+<section class="text-center bg-danger text-white newsletter" id="Contacto">
+	  <h3 class="text-center mayusc font-weight-bold pt-5 text-uppercase">SUSCRÍBETE EN NUESTRO NEWSLETTER</h3>
+      <p class="mb-5 ">y obtén las mejores recetas que tenemos en <span class="texto-nav">Ricomida</span></p>
+      <button type="button" class="text-center btn btn-outline-light">Empezar</button>
+</section>
+
+<footer class="text-center bg-dark text-white p-5">
+      <p class="texto-nav text-center">Ricomida</p>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
