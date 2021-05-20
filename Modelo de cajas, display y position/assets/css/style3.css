@@ -1,0 +1,67 @@
+body {background-color: white;}
+
+.bandera{
+	background-color: white;
+    border : 1px solid black;
+	width: 500px;
+	height: 300px;
+    margin: 20px;
+    float: left;
+}
+
+.esp1{
+	background-color: yellow;
+	height: 150px;
+}
+
+.esp2{
+	background-color: red;
+	height: 75px;
+}
+
+
+.emir1{
+	background-color: green;
+	height: 100px;
+}
+
+.emir2{
+    background-color: white;
+    height: 100px;
+}
+
+.emir3{
+    background-color:black;
+    height: 100px;
+}
+
+.emir4{
+	background-color: red;
+	width: 100px;
+	height: 300px;
+    float: left;
+}
+
+.sq_den1{
+	background-color: red;
+	width: 135px;
+	height: 135px;
+    float: left;
+}
+
+.sq_den2{
+	background-color: red;
+	width: 135px;
+	height: 135px;
+    top: 165px;
+    float: left;
+}
+
+
+.japo {
+    background-color: red;
+	width: 135px;
+	height: 135px;
+    border-radius:67.5px;
+    float: center;
+    }
