@@ -1,0 +1,16 @@
+.item{
+    position:absolute
+    height: 500px;
+    width: 500px;
+    z-index: 1;
+  }
+
+.ribbon{
+        position:absolute;
+        height: 10%;
+        width: 10%;
+        z-index: 2;
+        left: 100px;        
+        top: 110px;
+
+    }

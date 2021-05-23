@@ -1,0 +1,13 @@
+.item{
+    position:absolute;
+    height:200px;
+    width:200px;
+    z-index: 1;
+  }
+
+.ribbon{
+        position:absolute;
+        height:300px;
+        width:300px;
+        z-index: 2;
+      }

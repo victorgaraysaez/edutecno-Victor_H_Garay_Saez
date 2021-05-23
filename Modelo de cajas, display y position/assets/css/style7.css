@@ -1,0 +1,12 @@
+
+.body{
+    background-color: #e0e0e0;
+}
+
+.ribbon{
+    width: 135px;
+    height: 135px;
+    float: right;
+    position : relative;   
+    left: 10px;   
+}

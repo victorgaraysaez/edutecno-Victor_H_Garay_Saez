@@ -1,0 +1,19 @@
+body {
+margin : 0 ;
+padding : 0 ;
+}
+.main {
+      position: fixed;
+      border : 2px solid #B0CCAB;
+      background-color: #B0CCAB;
+      height : 120px ;
+      padding :  50px;
+}
+
+.main__paragraph {
+background-color : #B0CCAB;
+padding : 0px 50px;
+left : 40px;
+float: left;
+position : relative;
+}
