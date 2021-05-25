@@ -4,6 +4,9 @@ body {
   margin: 0;
 }
 
+hr { background-color: #6C6E70; }
+span { color: #ECBCBA; }
+
 .fotoblog {
   width: 100%;
   border: 1px solid black;
@@ -13,9 +16,31 @@ body {
 text-align: center;
 font-size: 20px;
 font-weight: 700;
-font-family:Roboto;
+font-family: "Playfair";
+font-style: italic;
 }
 
 .fotoperfil {
 border-radius:131px;
+}
+
+.btn-primary {
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: #6C6E70;
+  border-color: #6C6E70;
+  border-radius:25px;
+}
+
+.page-linkz {
+  position: relative;
+  display: block;
+  padding: 0.25rem 0.25rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #222323;
+  background-color: #fff;
+  border-color: #6C6E70;
 }
