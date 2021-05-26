@@ -4,34 +4,69 @@ body {
   margin: 0;
 }
 
-hr { background-color: #6C6E70; }
+hr { background-color: #6C6E60; }
 span { color: #ECBCBA; }
 
 .fotoblog {
   width: 100%;
   border: 1px solid black;
+  z-index: 1;
 }
 
-.mitexto {
-text-align: center;
-font-size: 20px;
-font-weight: 700;
+.box{
+  background-color: transparent;
+  margin: 2px;
+  padding: 5px;
+  width: 100%;
+  height: 160px;
+  position : relative;
+  text-align: center;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 60px;
+  font-family: "Playfair Display";
+  font-style: italic;
+  top: -500px;
+  z-index: 2;
+  }
+  
+.rotate_porfavor {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    font-size: 60px;
+    font-family: "Playfair Display";
+    font-style: bold;
+}
+
+.btn-primary {
+  padding: 0.5rem 0.65rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: #fff;
+  background-color: #6C6E60;
+  border-color: #6C6E60;
+  border-radius:25px;
+}
+  
+.mitexto{
+font-size: 25px;
+font-weight: 600;
 font-family: "Playfair";
 font-style: italic;
 }
 
 .fotoperfil {
+position: relative;
 border-radius:131px;
+background-color: transparent;
+margin: 2px;
+padding: 5px;
+width: 90%;
+top: -30px;
 }
 
-.btn-primary {
-  padding: 0.5rem 0.75rem;
-  margin-left: -1px;
-  line-height: 1.25;
-  color: #fff;
-  background-color: #6C6E70;
-  border-color: #6C6E70;
-  border-radius:25px;
+.pad{
+  padding: 25px;
 }
 
 .page-linkz {
@@ -42,5 +77,21 @@ border-radius:131px;
   line-height: 1.25;
   color: #222323;
   background-color: #fff;
-  border-color: #6C6E70;
+  border-color: #6C6E60;
+}
+
+.tocaito{
+  color: #fff;
+  background-color: #6C6E60;
+  border-color: #6C6E60;
+}
+
+.borde_interno{
+  border-top-left-radius: 16px 16px;
+  border-bottom-left-radius: 16px 16px;
+}
+
+.borde_externo{
+  border-top-right-radius: 16px 16px;
+  border-bottom-right-radius: 16px 16px;
 }
