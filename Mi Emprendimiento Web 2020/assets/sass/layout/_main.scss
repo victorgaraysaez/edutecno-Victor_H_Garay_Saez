@@ -1,0 +1,124 @@
+/* _layout_main */
+
+.main {
+  width: 100%;
+}
+
+.main_container {
+  clear: both;
+  margin: auto;
+  display: grid;
+}
+
+.main__left {
+  margin: 10px;
+  border: 1px solid $Black;
+  padding: 1em;
+
+  &--HTMLCSS {
+    padding: 1em;
+    border: 1px solid $Black;
+    border-style: dotted;
+    margin-bottom: 1em;
+  }
+
+  &--SASS {
+    padding: 1em;
+    border: 1px solid $Black;
+    border-style: dotted;
+  }
+
+  &--img {
+    width: 100%;
+  }
+
+  &--icons {
+    :active,
+    :hover {
+      color: $Orange;
+    }
+
+    &--a {
+      padding: 0em 0.25em;
+      color: $Black;
+    }
+  }
+
+  &--text--h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+  }
+}
+
+.main__right {
+  margin: 10px;
+  border: 1px solid $Black;
+  padding: 1em;
+
+  &--LECTURES {
+    padding: 1em;
+  }
+
+  &--img {
+    width: 100%;
+  }
+
+  &--img1 {
+    width: 30%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    border: 1px solid $Black;
+  }
+
+  &--icons {
+    text-align: center;
+    padding: 0.5em 0em;
+    :active,
+    :hover {
+      color: $Orange;
+    }
+
+    &--a {
+      padding: 0em 0.25em;
+      color: $Black;
+    }
+  }
+
+  &--text--h1 {
+    padding: 0.5em 0em;
+  }
+
+  &--title--h2 {
+    width: 100%;
+    background-color: $Charcoal;
+  }
+
+  &--list {
+    &--ul {
+      list-style: none;
+      padding: 0;
+      margin-left: 10px;
+
+      a {
+        color: #9177c0;
+      }
+    }
+
+    &--li::before {
+      content: "\26AC";
+      padding-right: 8px;
+      color: #9177c0;
+    }
+
+    :active,
+    :hover {
+      color: $Orange;
+    }
+  }
+
+  &--svg {
+    text-align: center;
+    margin: auto;
+  }
+}

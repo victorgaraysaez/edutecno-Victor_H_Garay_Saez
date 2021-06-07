@@ -1,0 +1,12 @@
+/* _buttons */
+
+.footer__ads--group{
+    font-family: $Poppins;
+    font-size: $small;
+
+    :active,
+    :hover {
+        background-color: $Orange;
+        
+    }
+}
