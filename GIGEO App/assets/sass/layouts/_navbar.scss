@@ -1,0 +1,29 @@
+/* _layout_navbar */
+
+.navbar {
+  height: 80px;
+  padding: 0 70px;
+  .navbar__logo {
+    font-size: 35px;
+    font-weight: 500;
+    p {
+      font-size: 15px;
+      display: inline;
+      vertical-align: text-top;
+    }
+  }
+  .navbar__options {
+    justify-content: flex-end;
+    .navbar__list {
+      .navbar__item {
+        margin: 0 5px;
+        .navbar__link {
+          .navbar__icon {
+            font-size: 25px;
+            color: $Dark-Green;
+          }
+        }
+      }
+    }
+  }
+}

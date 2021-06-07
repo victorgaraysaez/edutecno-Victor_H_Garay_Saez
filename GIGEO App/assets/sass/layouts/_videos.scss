@@ -1,0 +1,38 @@
+/* _layout_videos */
+
+.videos-section {
+  padding: 40px 100px;
+  @media screen and(max-width:$mobile) {
+      padding: 40px 80px;
+  }
+  .videos-section__title {
+    margin-bottom: 35px;
+  }
+  .videos-section__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .videos-section__card {
+      width: 23%;
+      margin-bottom: 30px;
+      border: none;
+      @media screen and(max-width:$mobile) {
+        width: 100%;
+    }
+        .videos-section__img{
+            height: 180px;
+            @media screen and(max-width:$mobile) {
+                height: auto;
+            }
+        }
+      .videos-section__card-body {
+        padding: 10px 0px;
+
+        .card__title{
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

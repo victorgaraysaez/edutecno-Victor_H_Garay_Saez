@@ -1,0 +1,44 @@
+/* _layout_profile */
+
+.profile {
+  display: flex;
+  padding: 15px 30px;
+  justify-content: space-between;
+  border-bottom: 1px solid $Grey;
+
+  @media screen and (max-width:$mobile){
+      justify-content: center;
+  }
+  .profile__info {
+    display: flex;
+    .profile__img {
+      background-image: url("assets/images/profile-image.png");
+      background-size: cover;
+      border-radius: 50px;
+      width: 80px;
+      height: 80px;
+    }
+    .profile__text{
+        padding-left: 25px;
+        .profile__name {
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+        .profile__follows {
+            color: $Grey;
+        }
+    }
+  }
+  .profile__buttons {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:$mobile){
+        display: none;
+    }
+    .profile__button {
+      margin: 0 10px;
+      padding: 5px 10px;
+    }
+  }
+}
