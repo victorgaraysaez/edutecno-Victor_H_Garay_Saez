@@ -1,0 +1,15 @@
+//variables
+@import "./abstracts/variables";
+
+//layouts
+@import "./layouts/grilla";
+@import "./layouts/navbar";
+@import "./layouts/noticias";
+@import "./layouts/sidebar";
+@import "./layouts/footer";
+
+//base
+@import "./base/reset";
+
+//components
+@import "./components/cards";

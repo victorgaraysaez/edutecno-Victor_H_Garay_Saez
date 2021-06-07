@@ -1,0 +1,14 @@
+/* _layout_noticias */
+
+.noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 25px;
+  @media screen and (max-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+}

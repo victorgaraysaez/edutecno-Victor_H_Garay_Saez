@@ -1,0 +1,10 @@
+/* _layout_grilla */
+
+.grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  padding: 0 20px;
+  @media screen and (max-width: $mobile) {
+    grid-template-columns: 1fr;
+  }
+}
