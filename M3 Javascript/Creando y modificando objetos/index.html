@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Extracto Fichas Consultorio N°1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="js.png">
+    <meta name= "author" content= "Víctor Hugo Garay Sáez">
+    <meta name="description" content="Creando y modificando objetos en Javascript" />
+    <meta name="keywords" content="Introducción a la Programación Orientada a Objetos, Programación Orientada a Objetos en ES5, Trabajando con objetos, Trabajando con múltiples objetos, javascript" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+ </head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand mx-auto" style="width: 200px;" href="#">
+          Extracto Fichas Consultorio N°1 
+        </a>
+    </nav>
+	
+	<div class="container align-content-center">
+      <p>Para hacer un extracto de ficha nuevo, complete los siguientes datos y haga clic en "Guardar"</p>
+      
+      <table width="700" border="1">
+        <tbody>
+          <tr>
+            <td width="17%" >NOMBRE
+              </td>
+            <td> <input type="text" id="nomPac" class="form-control" id="textfield">
+            </td>
+          </tr>
+          <tr>
+            <td>EDAD</td>
+            <td><input type="text" id="eddPac" class="form-control" id="textfield"></td>
+          </tr>
+          <tr>
+            <td>RUT</td>
+            <td><input type="text" id="rutPac" class="form-control" id="textfield"></td>
+          </tr>
+          <tr>
+            <td>DIAGNOSTICO</td>
+            <td><input type="text" id="dgnPac" class="form-control" id="textfield"></td>
+          </tr>
+        </tbody>
+      </table>
+	  	<input type="button" name="button" id="btnGuardar" value="Guardar" onClick="guardar_pacientes();" class="list-group-item list-group-item-action">
+		<p></p>
+		<input type="button" name="button" id="btnMostrar" value="Mostrar Todos los Pacientes" onClick="mostrar_pacientes();" class="list-group-item list-group-item-action">
+		<p id="mstrPac"></p>
+		<input type="button" name="button" id="btnBuscar" value="Buscar Pacientes" onClick="buscar_pacientes();" class="list-group-item list-group-item-action">
+        <input type="text" id="nombre2_p" placeholder="ingrese el nombre y presione el botón Buscar Pacientes" class="form-control" id="textfield"> 
+		<p id="bscrPac" ></p>
+		<a href="index.html" class="list-group-item list-group-item-action" role="button" aria-disabled="true">Limpiar</a>
+	</div>
+	
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+</body>
+</html>
