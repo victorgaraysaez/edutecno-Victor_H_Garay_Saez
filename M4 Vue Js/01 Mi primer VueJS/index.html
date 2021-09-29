@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Mi primer VueJS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico">
+    <meta name= "author" content= "Víctor Hugo Garay Sáez">
+    <meta name="description" content="CDN de desarrollo de VueJS" />
+    <meta name="keywords" content="CDN, VueJS" />
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+<h1 class="text-center">Tabla de Usuarios</h1><br>
+  <div id="app">
+    <table class='table table-striped'>
+          <thead class="thead-dark">
+           <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+              <th scope="col">RUN</th>
+              <th scope="col">Nacimiento</th>
+              <th scope="col">Edad</th>
+          </thead>
+         <tbody>
+            <tr v-for="(persona, index) in personas" :key="index">
+              <th scope="row">{{ persona.id }}</th>
+              <td >{{ persona.nombre }}</td>
+              <td >{{ persona.apellido }}</td>
+              <td >{{ persona.run }}</td>
+              <td >{{ persona.nacimiento }}</td>
+              <td >{{ persona.edad }}</td>
+            </tr>
+          </tbody>
+        </table>
+</div>
+
+<script>
+const app = new Vue({
+el: '#app',
+data: {
+personas: [
+{ id:1,nombre: 'Martin Alonso',apellido:'Pinzon',run:'12345678-1', nacimiento:'23-05-1441',edad:52},
+{ id:2,nombre: 'Juan Sebastian',apellido:'Elcano',run:'9876543-2', nacimiento:'01-01-1486',edad:40 },
+{ id:3,nombre: 'Americo',apellido:'Vespucio',run:'1243576-3', nacimiento:'09-03-1454',edad:58 },
+]
+}
+})
+</script>
+</body>
+</html>
